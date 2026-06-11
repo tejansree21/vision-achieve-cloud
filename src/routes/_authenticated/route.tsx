@@ -32,7 +32,8 @@ function AuthedShell() {
   const navigate = useNavigate();
   const path = useRouterState({ select: (s) => s.location.pathname });
   const qc = useQueryClient();
-  const { stores } = useStores().data ? { stores: useStores().data! } : { stores: [] };
+  const storesQ = useStores();
+  const stores = storesQ.data ?? [];
   const { active, select } = useActiveStore();
 
   const signOut = async () => {
