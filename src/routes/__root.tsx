@@ -10,7 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
+// error reporting removed
 import { Toaster } from "@/components/ui/sonner";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -40,8 +40,8 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
+  console.error(error);
+}, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -85,7 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Track inventory, detect shrinkage, schedule staff, and run your store from one dashboard." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@RetailFlow" },
       { name: "twitter:title", content: "RetailFlow — Shrinkage detection for convenience stores" },
       { name: "twitter:description", content: "Track inventory, detect shrinkage, schedule staff, and run your store from one dashboard." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4e2c4b11-124c-4723-805d-778ccf71c290/id-preview-92d6f9fe--6442598c-4d6f-477b-b943-aa2cee4b75dc.lovable.app-1781178029304.png" },
