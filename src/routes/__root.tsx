@@ -81,11 +81,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "RetailFlow — Shrinkage detection for convenience stores" },
       { name: "description", content: "Track inventory, detect shrinkage, schedule staff, and run your store from one dashboard." },
-      { property: "og:title", content: "RetailFlow" },
-      { property: "og:description", content: "Shrinkage detection and store ops for SPAR & convenience retailers." },
+      { property: "og:title", content: "RetailFlow — Shrinkage detection for convenience stores" },
+      { property: "og:description", content: "Track inventory, detect shrinkage, schedule staff, and run your store from one dashboard." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "RetailFlow — Shrinkage detection for convenience stores" },
+      { name: "twitter:description", content: "Track inventory, detect shrinkage, schedule staff, and run your store from one dashboard." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4e2c4b11-124c-4723-805d-778ccf71c290/id-preview-92d6f9fe--6442598c-4d6f-477b-b943-aa2cee4b75dc.lovable.app-1781178029304.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4e2c4b11-124c-4723-805d-778ccf71c290/id-preview-92d6f9fe--6442598c-4d6f-477b-b943-aa2cee4b75dc.lovable.app-1781178029304.png" },
     ],
     links: [
       {
