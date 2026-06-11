@@ -1,15 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "vite",
   "installCommand": "npm ci",
-  "env": {
-    "VITE_SUPABASE_URL": {
-      "description": "Supabase project URL"
-    },
-    "VITE_SUPABASE_PUBLISHABLE_KEY": {
-      "description": "Supabase anonymous public key"
-    }
-  },
-  "regions": ["iad1"]
+  "framework": null
 }
